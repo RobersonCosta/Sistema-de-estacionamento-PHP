@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="bootstrap.css"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.maskedinput.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container" >
+            <div class="row" >
+                <label label-default>Valores</label>
+<a href="telaAdicionarValor.php"class="btn btn-default">Adicionar novo valor</a><br><br>
+                <table class="table table-hover">
+                    <tr>
+                        <td><h5><b>Tipo</b></h5></td><td><h5><b>Per noite</b></h5></td><td><h5><b>Diaria</b></h5></td><td><h5><b>Valor</b></h5></td><td></td>
+                    </tr>
+                	<!-- BEGIN BLOCK_VALOR -->
+
+                        <tr>
+                            <td>{TIPO}</td><td>{PER_NOITE}</td><td>{DIARIA}</td><td>{VALOR}R$</td>                        
+                            <td align="right"><a href="telaEditarValor.php?id_valor={ID_VALOR}"class="btn btn-default">Editar</a>
+                            <a href="deletarValor.php?id_valor={ID_VALOR}"class="btn btn-default">Deletar</a></td>
+                        </tr>
+                     <!-- END BLOCK_VALOR -->
+                </table>          
+
+Nenhum Valor encontrado
+<!-- FINALLY BLOCK_VALOR -->      
+            </div>
+        </div>
+
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+﻿-- create table veiculo (
+-- id serial,
+-- id_tipo int references tipo,
+-- cor varchar not null,
+-- placa varchar (8) unique,
+-- marca varchar not null,
+-- modelo varchar not null,
+-- primary key(id)
+-- );
+
+-- create table tipo (
+-- id serial,
+-- descricao varchar not null,
+-- primary key(id)
+-- );
+-- 
+-- create table ocupacao (
+-- id serial,
+-- id_veiculo integer not null,
+-- id_vaga integer,
+-- data_entrada date,
+-- data_saida date,
+-- hora_entrada time,
+-- hora_saida time,
+-- valor float,
+-- primary key (id)
+-- );
+-- 
+-- create table vaga (
+-- id serial,
+-- andar varchar not null,
+-- status boolean not null,
+-- primary key (id)
+-- );
+-- 
+-- create table valor (
+-- id serial,
+-- id_tipo integer references tipo,
+-- per_noite boolean not null,
+-- diaria boolean not null,
+-- valor float not null,
+-- primary key (id)
+-- );
+-- 
+-- insert into tipo (descricao) values ('Carro');
+-- insert into tipo (descricao) values ('Moto');
+-- insert into tipo (descricao) values ('Caminhão');
+-- insert into tipo (descricao) values ('Caminhonete');
+-- insert into tipo (descricao) values ('Ônibus');-- 
+-- 
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (1, false, false, 5);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (2, false, false, 4);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (3, false, false, 8);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (4, false, false, 7);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (5, false, false, 10);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (1, true, false, 18);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (2, true, false, 16);
+-- insert into valor (id_tipo, per_noite, diaria, valor) values (null, false, true, 25);
+ 
+-- insert into vaga (andar, status) values ('2',false);
+-- insert into vaga (andar, status) values ('terreo',false);
+-- insert into vaga (andar, status) values ('1',false);
+-- insert into vaga (andar, status) values ('1',false);
+-- insert into vaga (andar, status) values ('2',false);
+
+-- create table usuario (
+-- id serial,
+-- login varchar not null,
+-- senha varchar not null,
+-- administrador boolean not null,
+-- primary key (id)
+-- );
+-- 
+-- insert into usuario (login, senha, administrador) values ('admin', 'admin', true);
+-- insert into usuario (login, senha, administrador) values ('vitinhosniper', 'ihviado', false);
